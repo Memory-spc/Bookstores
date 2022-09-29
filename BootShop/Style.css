@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Bauhaus";
+  src: url(public/STXINGKA.TTF);
+}
+
+body{
+  clear: both;
+}
+
+a{
+  color: #c0a482;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+.headbgc{
+  background-image: linear-gradient(bisque , #fff);
+}
+
+header{
+  padding: 1rem;
+  text-align: center;
+  font: unset;
+  font-family: "Bauhaus";
+  color: #917c62;
+  /* background-color: bisque; */
+  font-size: 5rem;
+}
+nav {
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  display: flex;
+  /* justify-content: center; */
+  font-family: "Bauhaus";
+  padding: 0;
+  margin: 0;
+  /* padding-left: 5rem; */
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #c0a482;
+}
+nav ul li a:hover{
+  color: rgb(145, 124, 98);
+  text-decoration: none;
+}
+
+nav .right{
+  padding: 1rem .5rem;
+  font-family: "Bauhaus";
+  color: #c0a482;
+}
+
+main{
+
+  font-family: "Bauhaus";
+}
+
+footer{
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  background-image: linear-gradient(to bottom,#fff,bisque);
+  text-align: center;
+  font-family: "Bauhaus";
+  position: absolute;
+  color: #c0a482;
+}
+/* 主页样式 */
+.Index-container{
+  margin: 0 auto;
+  width: 80%;
+}
+.Index-container ul{
+  text-align: center;
+  padding-top: 4rem;
+  width: 100%;
+  clear: both;
+}
+.Index-container li{
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  padding: 1rem;
+}
+
+.Index-container li a{
+  text-align: center;
+}
+
+.Index-container li a label{
+  font-size: 1.5rem;
+}
+
+.Index-container a img{
+  width: 100%;
+  height: 135.225px;
+  overflow: hidden;
+}
+
+/* 商品展示页样式 */
+.Products-container{
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.Products-container .table{
+  display: table;
+  width: 100%;
+}
+.Products-container .table .tr{
+  width: 100%;
+  display: table-row;
+}
+.Products-container .table .tr li{
+  display: table-cell;
+  text-align: center;
+
+}
+.Products-container .table .tr li:nth-child(2){
+  text-align: left;
+}
+
+.Products-container .tr li img{
+  padding-top: .3rem;
+  width: 65px;
+  vertical-align: middle;
+}
+
+/* 用户登录页面的样式 */
+.Login-container {
+  text-align: center;
+}
+.Login-container h3{
+  color: rgb(145, 124, 98);
+  font-size: 2.5rem;
+}
+.Login-container form{
+  display: table;
+  width: 20%;
+  margin: 0 auto;
+}
+.Login-container form p{
+  display: table-row;
+  font-size: 1.5rem;
+}
+.Login-container form p label{
+  display: table-cell;
+}
+.Login-container form p input{
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: .3rem;
+}
+
+.Login-container form .btn{
+  width: 100%;
+}
+
+.Login-container form .btn input{
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  margin-left: 100%;
+  border-radius: .3rem;
+  background-color: bisque;
+  cursor: pointer;
+  color: rgb(145, 124, 98);
+}
+.error{
+  color: red;
+  font-size: 1rem;
+}
+
+/* 用户注册界面样式 */
+.Register-container{
+  margin-top: 6rem;
+  width: 100%;
+  text-align: center;
+}
+.Register-container h3{
+  font-size: 2.5rem;
+  color: rgb(145, 124, 98);
+  margin-top: .5rem;
+}
+.Register-container form{
+  width: 32%;
+  display: table;
+  margin: .5rem auto 0;
+}
+.Register-container form ul{
+  font-size: 1.5rem;
+  display: table-row;
+}
+.Register-container form li{
+  display: table-cell;
+}
+.Register-container form li input{
+  width: 70%;
+  margin-top: .5rem;
+  font-size: 1rem;
+  padding: 0.3rem 0.1rem;
+}
+
+.Register-container form .btn input{
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  margin-left: 115%;
+  border-radius: .3rem;
+  background-color: bisque;
+  cursor: pointer;
+  color: rgb(145, 124, 98);
+}
+
+/*购物车样式 */
+.ShoppingCart-container{
+  padding: 1rem 5rem;
+}
+.ShoppingCart-container .table{
+  display: table;
+  width: 100%;
+}
+.ShoppingCart-container .table ul{
+  display: table-row;
+  height: 2rem;
+}
+.ShoppingCart-container .table ul li{
+  display: table-cell;
+}
+.ShoppingCart-container .settlement{
+  padding: 5rem 5rem 0;
+}
+.ShoppingCart-container .settlement ul{
+  width: 100%;
+  display: table;
+}
+.ShoppingCart-container .settlement li{
+  display: table-cell;
+  text-align: center;
+}
+
+
+/* 用户信息界面的样式 */
+.Userprofile-container{
+  width: 100%;
+  text-align: center;
+}
+.Userprofile-container h3{
+  font-size: 2rem;
+  color: rgb(145, 124, 98);
+  margin-top: .5rem;
+}
+.Userprofile-container form{
+  width: 32%;
+  display: table;
+  margin: .5rem auto 0;
+}
+.Userprofile-container ul{
+  font-size: 1rem;
+  display: table-row;
+}
+.Userprofile-container ul li{
+  display: table-cell;
+}
+.Userprofile-container ul li input{
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.3rem 0.1rem;
+}
+.Userprofile-container ul .btn input{
+  border: none;
+  width: 251%;
+  height: 2.5rem;
+  margin-left: 200%;
+  border-radius: .3rem;
+  background-color: bisque;
+  cursor: pointer;
+  color: rgb(145, 124, 98);
+}
+
+/* 结算页样式 */
+.CheckOut-container{
+  padding:0 10rem;
+}
+.CheckOut-container .products,
+.CheckOut-container .userProfile{
+  display: table;
+  width: 100%;
+}
+.CheckOut-container ul{
+  display: table-row;
+}
+.CheckOut-container ul li{
+  display: table-cell;
+  font-size: 1rem;
+  height: 2.5rem;
+  line-height: 2.5  rem;
+}
+.CheckOut-container .products{
+  margin-top: 3rem;
+}
+.CheckOut-container .products ul li:last-child{
+  text-align: right;
+  /* text-align: center; */
+}
+.CheckOut-container .userProfile{
+  margin-top: 5rem;
+}
+.CheckOut-container .userProfile li{
+  text-align: center;
+}
+
+.CheckOut-container p{
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
